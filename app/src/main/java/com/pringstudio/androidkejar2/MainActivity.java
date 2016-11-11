@@ -19,11 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
     // Membuat handler click tombol order
     public void submitOrder(View view){
+        // Buat variable jumlahKopi
+        int jumlahKopi = 2;
+
         // Panggil Fungsi saat tombol di klik
-        displayOrder(2);
+        displayOrder(jumlahKopi);
 
         // Panggil fungsi untuk menampilkan harga
-        displayPrice(2 * 5);
+        displayPrice(jumlahKopi * 5);
     }
 
     // Aksi untuk menampilkan order

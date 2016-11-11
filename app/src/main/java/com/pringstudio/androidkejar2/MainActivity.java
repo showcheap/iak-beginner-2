@@ -19,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     public void submitOrder(View view){
         // Panggil Fungsi saat tombol di klik
         displayOrder(2);
+
+        displayOrder(7 * 2);
     }
 
     // Aksi untuk menampilkan order

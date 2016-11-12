@@ -22,12 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
     // Membuat handler click tombol order
     public void submitOrder(View view){
+        int price = quantity * 5;
+        String priceMessage = "Total: $"+price+"\nThank You!";
 
-        // Panggil Fungsi saat tombol di klik
-        displayOrder(quantity);
-
-        // Panggil fungsi untuk menampilkan harga
-        displayPrice(quantity * 5);
+        displayMessage(priceMessage);
     }
 
     // Aksi untuk menampilkan order
@@ -44,14 +42,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tambahOrder(View view){
-//        int quantity = 2;
         quantity = quantity + 1;
         displayOrder(quantity);
     }
 
     public void kurangiOrder(View view){
-//        int quantity = 3;
         quantity = quantity - 1;
         displayOrder(quantity);
+    }
+
+    private void displayMessage(String message){
+        TextView priceText = (TextView) findViewById(R.id.text_price);
+        priceText.setText(message);
     }
 }

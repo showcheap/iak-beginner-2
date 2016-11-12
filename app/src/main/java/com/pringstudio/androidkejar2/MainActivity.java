@@ -9,6 +9,9 @@ import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity {
 
+    // Global variabel
+    int quantity = 2;
+
     // Snippet bisa dicopy di sini: https://git.io/vXKTW
 
     @Override
@@ -19,14 +22,12 @@ public class MainActivity extends AppCompatActivity {
 
     // Membuat handler click tombol order
     public void submitOrder(View view){
-        // Buat variable jumlahKopi
-        int jumlahKopi = 2;
 
         // Panggil Fungsi saat tombol di klik
-        displayOrder(jumlahKopi);
+        displayOrder(quantity);
 
         // Panggil fungsi untuk menampilkan harga
-        displayPrice(jumlahKopi * 5);
+        displayPrice(quantity * 5);
     }
 
     // Aksi untuk menampilkan order
@@ -43,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tambahOrder(View view){
-        int quantity = 2;
+//        int quantity = 2;
         quantity = quantity + 1;
         displayOrder(quantity);
     }
 
     public void kurangiOrder(View view){
-        int quantity = 3;
+//        int quantity = 3;
         quantity = quantity - 1;
         displayOrder(quantity);
     }

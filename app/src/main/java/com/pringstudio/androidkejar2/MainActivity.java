@@ -41,4 +41,16 @@ public class MainActivity extends AppCompatActivity {
         TextView priceText = (TextView) findViewById(R.id.text_price);
         priceText.setText(NumberFormat.getCurrencyInstance().format(number));
     }
+
+    public void tambahOrder(View view){
+        int quantity = 2;
+        quantity = quantity + 1;
+        displayOrder(quantity);
+    }
+
+    public void kurangiOrder(View view){
+        int quantity = 3;
+        quantity = quantity - 1;
+        displayOrder(quantity);
+    }
 }

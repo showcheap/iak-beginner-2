@@ -18,6 +18,12 @@
         android:layout_marginBottom="16dp"
         android:text="Quantity" />
 
+    <Button
+        android:text="+"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="tambahOrder"/>
+
     <TextView
         android:text="0"
         android:textSize="16sp"
@@ -25,6 +31,12 @@
         android:id="@+id/text_quantity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:text="-"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:onClick="kurangiOrder"/>
 
     <TextView
         android:layout_marginTop="16dp"
